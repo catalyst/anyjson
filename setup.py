@@ -1,10 +1,6 @@
 import os
 import sys
 
-extra = {}
-if sys.version_info >= (3, 0):
-    extra.update(use_2to3=True)
-
 try:
     from setuptools import setup, find_packages
 except ImportError:
@@ -79,14 +75,7 @@ setup(name='anyjson',
             'License :: OSI Approved :: BSD License',
             'Operating System :: OS Independent',
             'Intended Audience :: Developers',
-            'Programming Language :: Python',
-            'Programming Language :: Python :: 2',
-            'Programming Language :: Python :: 2.4',
-            'Programming Language :: Python :: 2.5',
-            'Programming Language :: Python :: 2.6',
-            'Programming Language :: Python :: 2.7',
-            'Programming Language :: Python :: 3',
-            'Programming Language :: Python :: 3.1',
+            'Programming Language :: Python :: 3 :: Only',
             'Programming Language :: Python :: Implementation :: CPython',
             'Programming Language :: Python :: Implementation :: PyPy',
             'Programming Language :: Python :: Implementation :: Jython',
@@ -95,6 +84,5 @@ setup(name='anyjson',
       packages=find_packages(exclude=['ez_setup', 'examples', 'tests']),
       zip_safe=False,
       platforms=["any"],
-      test_suite = 'nose.collector',
-      **extra
+      test_suite='nose.collector'
 )

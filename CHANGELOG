@@ -64,3 +64,8 @@
 
  * Fixed bug in buffer object support related to differences between
    stringIO and cStringIO
+
+0.4.0
+
+ * Breaking change: Removed support for Python 2
+ * Removed use of use_2to3 in setup.py

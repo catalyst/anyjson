@@ -2,8 +2,9 @@
 interface"""
 
 import sys
+from io import StringIO
 
-VERSION = (0, 3, 3)
+VERSION = (0, 4, 0)
 __version__ = ".".join(map(str, VERSION[0:3])) + "".join(VERSION[3:])
 __author__ = "Rune Halvorsen"
 __contact__ = "runefh@gmail.com"
@@ -16,16 +17,6 @@ __docformat__ = "restructuredtext"
 #: except to get the name of the implementation in use. The name is
 #: available through ``implementation.name``.
 implementation = None
-
-# json.loads does not support buffer() objects,
-# so we load() and StringIO instead, and it won't copy.
-if sys.version_info[0] == 3:
-    from io import StringIO
-else:
-    try:
-        from cStringIO import StringIO  # noqa
-    except ImportError:
-        from StringIO import StringIO   # noqa
 
 #: List of known json modules, and the names of their loads/dumps
 #: methods, as well as the exceptions they throw.  Exception can be either
