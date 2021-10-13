@@ -1,17 +1,15 @@
-##############################
-anyjson - JSON library wrapper
-##############################
+    ##############################
+    anyjson - JSON library wrapper
+    ##############################
 
-Overview
---------
+#### Overview
 
 Anyjson loads whichever is the fastest JSON module installed and provides
 a uniform API regardless of which JSON implementation is used.
 
 Originally part of carrot (http://github.com/ask/carrot/)
 
-Examples
---------
+#### Examples
 
 To serialize a python object to a JSON string, call the `serialize` function:
 
@@ -40,20 +38,16 @@ And deserializing a JSON string with invalid JSON raises a ValueError:
       <snipped traceback>
     ValueError: cannot parse JSON description
 
-
-Contact
--------
+#### Contact
 
 The module is maintaned by Rune F. Halvorsen <runefh@gmail.com>.
 The project resides at http://bitbucket.org/runeh/anyjson . Bugs and feature
 requests can be submitted there. Patches are also very welcome.
 
-Changelog
----------
+#### Changelog
 
-See CHANGELOG file
+See [CHANGELOG](CHANGELOG)
 
-License
--------
+#### License
 
-see the LICENSE file
+See [LICENSE](LICENSE)
