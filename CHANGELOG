@@ -69,3 +69,7 @@
 
  * Breaking change: Removed support for Python 2
  * Removed use of use_2to3 in setup.py
+
+0.5.0
+
+ * run 2to3 on the project to make it Python 3 compatible

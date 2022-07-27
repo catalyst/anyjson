@@ -37,7 +37,7 @@ try:
         if line.strip() == '# -eof meta-':
             break
         acc.append(line)
-        for pattern, handler in pats.items():
+        for pattern, handler in list(pats.items()):
             m = pattern.match(line.strip())
             if m:
                 meta.update(handler(m))
