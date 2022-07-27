@@ -54,4 +54,4 @@ def test_json_loads_unicode():
     except ImportError:
         return
 
-    assert "foo" in anyjson.loads(u'{"foo": "bar"}')
+    assert "foo" in anyjson.loads('{"foo": "bar"}')
